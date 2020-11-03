@@ -5,24 +5,37 @@
 
 body {
   margin: 0;
-  background-image: linear-gradient(goldenrod, gold);
+  background-color: tan;
 }
 
 .heading {
-  color: white;
-  background-color: black;
+  background-color: palegoldenrod;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100px;
   padding-left: 50px;
-  padding-right: 50px;
   margin: 0;
+  border-bottom: 5px solid orange;
+}
+
+.aidan {
+  color: steelblue;
+  text-shadow: 1px 1px tan;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-right: 50px;
+}
+
+.page-nav {
+  padding: 10px;
 }
 
 .navbar {
@@ -39,6 +52,33 @@ body {
   height: 50px;
   width: 100px;
   align-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.text-container {
+  border-left: 15px solid orange;
+  width: 70%;
+  padding: 20px;
+  color: steelblue;
+  background-color: palegoldenrod;
+}
+
+.portrait {
+  width: 30%;
+  border: 3px solid blue;
+}
+
+footer {
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  position: relative;
+  top: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
