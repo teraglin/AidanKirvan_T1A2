@@ -9,7 +9,7 @@ body {
 }
 
 .heading {
-  background-color: palegoldenrod;
+  background-color: #e8d387;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,7 @@ body {
   height: 100px;
   padding-left: 50px;
   margin: 0;
-  border-bottom: 5px solid orange;
+  border-bottom: 5px solid whitesmoke;
 }
 
 .aidan {
@@ -55,22 +55,24 @@ body {
 }
 
 main {
+  font-size: x-large;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   margin: 0;
 }
 
 .text-container {
-  border-left: 15px solid orange;
-  width: 70%;
+  text-align: justify;
+  border-left: 15px solid whitesmoke;
+  width: 60%;
   padding: 20px;
   color: steelblue;
-  background-color: palegoldenrod;
+  background-color: #e8d387;
 }
 
 .portrait {
-  width: 30%;
-  border: 3px solid blue;
+  width: 40%;
 }
 
 footer {
