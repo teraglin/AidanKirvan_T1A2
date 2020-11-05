@@ -44,6 +44,7 @@ body {
 
 .aidan:hover {
     color: #81B29A;
+    transition: 0.3s;
 }
 
 .links {
@@ -58,6 +59,11 @@ body {
     padding: 10px;
 }
 
+.page-nav:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
 // NAVIGATION BAR
 
 .navbar {
@@ -68,7 +74,7 @@ body {
     width: 200px;
     height: 100px;
     text-decoration: none;
-    color: #3D405B;
+    background-color: #F2CC8F;
     font-weight: 700;
 }
 
@@ -80,14 +86,18 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    display: inline-block;
-    padding-top: 40px;
+    display: flex;
+    align-content: center;
+    padding-left: 10px;
+    padding-top: 35px;
     width: 150px;
     height: 100px;
 }
 
 .page-link:hover {
     color: #E07A5F;
+    border-left: 10px solid #F4F1DE;
+    transition: 0.5s;
 }
 
 // MAIN
@@ -145,6 +155,8 @@ main {
     .page-link {
         border-right: 1px dotted #3D405B;
         font-size: 1em;
+        justify-content: center;
+        padding-left: 0;
     }
     #page-link-r {
         border-right: none;
