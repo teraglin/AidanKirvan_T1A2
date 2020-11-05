@@ -15,6 +15,7 @@ body {
 .heading {
     background-color: #F4F1DE;
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -22,6 +23,7 @@ body {
     padding-left: 50px;
     margin: 0;
     border-bottom: 5px solid #3D405B;
+    z-index: 10;
 }
 
 .aidan {
@@ -36,11 +38,20 @@ body {
     text-transform: uppercase;
 }
 
+.home-link {
+    text-decoration: none;
+}
+
+.aidan:hover {
+    color: #81B29A;
+}
+
 .links {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 50px;
+    padding-left: 25px;
 }
 
 .page-nav {
@@ -63,13 +74,15 @@ body {
 
 .page-link {
     text-decoration: none;
+    font-size: 1.5em;
     color: #3D405B;
     background-color: #F2CC8F;
     font-weight: 700;
+    text-transform: uppercase;
     text-align: center;
     display: inline-block;
     padding-top: 40px;
-    width: 200px;
+    width: 150px;
     height: 100px;
 }
 
@@ -81,6 +94,8 @@ body {
 
 main {
     display: flex;
+    position: relative;
+    top: 100px;
     width: 100%;
     margin: 0;
 }
@@ -89,10 +104,13 @@ main {
     text-align: justify;
     // border-left: 15px solid rgb(167, 167, 167);
     width: 100%;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #F4F1DE;
     background-color: #81B29A;
-    border-bottom: 2px dashed #3D405B;
+    border-right: 2px dashed #3D405B;
+    border-bottom: none;
+    font-size: 2em;
 }
 
 .portrait {
@@ -103,9 +121,20 @@ main {
     background-color: #F4F1DE;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1100px) {
+    .text-container {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 700px){
     main {
         flex-direction: column;
+    }
+
+    .text-container {
+        border-bottom: 2px dashed #3D405B;
+        border-right: none;
     }
     
     .navbar {
@@ -115,9 +144,14 @@ main {
 
     .page-link {
         border-right: 1px dotted #3D405B;
+        font-size: 1em;
     }
     #page-link-r {
         border-right: none;
+    }
+
+    .hidden-text {
+        visibility: hidden;
     }
 }
 
@@ -129,5 +163,6 @@ footer {
     font-weight: 100;
     text-align: center;
     position: relative;
+    top: 100px;
     padding-top: 10px;
 }
