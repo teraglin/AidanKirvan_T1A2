@@ -5,31 +5,36 @@
 
 body {
   margin: 0;
-  background-color: #F2CC8F;
+  background-color: #F4F1DE;
+}
+
+.homebody {
+  background-image: url("/media/Winslow-Fernsby.jpg"), url("/media/me.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .heading {
-  background-color: #F4F1DE;
+  background-color: #3D405B;
   display: flex;
-  position: fixed;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100px;
   padding-left: 50px;
-  margin: 0;
-  border-bottom: 5px solid #3D405B;
+  padding-top: 10px;
+  padding-bottom: 10px;
   z-index: 10;
 }
 
 .aidan {
-  color: #E07A5F;
-  background-color: #F2CC8F;
+  color: #F4F1DE;
+  background-color: #3D405B;
   width: 200px;
   text-align: center;
-  border: 2px solid #3D405B;
+  border: 2px solid #F4F1DE;
   border-radius: 20px;
-  text-shadow: 5px 0px #3D405B;
+  text-shadow: 5px 0px #E07A5F;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
@@ -39,8 +44,10 @@ body {
 }
 
 .aidan:hover {
-  color: #81B29A;
-  transition: 0.3s;
+  color: #F2CC8F;
+  transition: 0.5s;
+  text-shadow: 0px 0px #F4F1DE;
+  border-color: #F2CC8F;
 }
 
 .links {
@@ -64,18 +71,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
-  height: 100px;
+  width: 150px;
+  height: 500px;
   text-decoration: none;
   background-color: #F2CC8F;
   font-weight: 700;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .page-link {
   text-decoration: none;
   font-size: 1.5em;
-  color: #3D405B;
-  background-color: #F2CC8F;
+  color: #F4F1DE;
+  background-color: #3D405B;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -88,39 +98,64 @@ body {
 }
 
 .page-link:hover {
-  color: #E07A5F;
-  border-left: 10px solid #F4F1DE;
+  color: #F2CC8F;
+  border-left: 10px solid #F2CC8F;
   transition: 0.5s;
 }
 
 main {
   display: flex;
   position: relative;
-  top: 100px;
   width: 100%;
-  margin: 0;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-right: 100px;
 }
 
 .text-container {
   text-align: justify;
+  color: #81B29A;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+  border: solid #F4F1DE;
+  border-width: 0px 10px 10px 10px;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.text {
+  border-radius: 5px;
   color: #F4F1DE;
   background-color: #81B29A;
-  border-right: 2px dashed #3D405B;
-  border-bottom: none;
-  font-size: 2em;
+  padding: 10px;
 }
 
 .portrait {
-  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
   background-color: #F4F1DE;
+  border: solid #F4F1DE;
+  border-width: 0px 10px 10px 0;
+}
+
+#home-page {
+  height: 500px;
 }
 
 @media screen and (max-width: 1100px) {
   .text-container {
     font-size: 1.3em;
+  }
+
+  .content-container {
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 700px) {
@@ -128,25 +163,32 @@ main {
     flex-direction: column;
   }
 
-  .text-container {
-    border-bottom: 2px dashed #3D405B;
-    border-right: none;
-  }
-
   .navbar {
     width: 100%;
+    height: 100px;
     flex-direction: row;
   }
 
   .page-link {
-    border-right: 1px dotted #3D405B;
     font-size: 1em;
     justify-content: center;
     padding-left: 0;
   }
 
+  .page-link:hover {
+    color: #F2CC8F;
+    border-bottom: 10px solid #F2CC8F;
+    border-left: none;
+    transition: 0.5s;
+  }
+
   #page-link-r {
     border-right: none;
+  }
+
+  .portrait {
+    border-width: 0 10px 10px 10px;
+    width: 100%;
   }
 
   .hidden-text {
@@ -155,12 +197,12 @@ main {
 }
 footer {
   color: #3D405B;
-  background-color: #F4F1DE;
   font-weight: 100;
   text-align: center;
   position: relative;
-  top: 100px;
+  top: 120px;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
