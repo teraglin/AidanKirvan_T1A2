@@ -1,11 +1,22 @@
 //F4F1DE creem E07A5F reb 3D405B bloo 81B29A gren F2CC8F yloo
 
-$back: #F4F1DE;
-$front: #3D405B;
-$primary: #81B29A;
-$secondary: #E07A5F;
-$neutral: #F2CC8F;
+// $back: #F4F1DE;
+// $front: #3D405B;
+// $primary: #81B29A;
+// $secondary: #E07A5F;
+// $neutral: #F2CC8F;
 
+// $back: #FFFCE8;
+// $front: #739E82;
+// $primary: #5F5449;
+// $secondary: #87A330;
+// $neutral: #FF9000;
+
+$back: #5F5449;
+$front: #F4F1DE;
+$primary: #3D405B;
+$secondary: #E07A5F;
+$neutral: #d1ff48;
 
 * {
     font-family: "Raleway", sans-serif;
@@ -14,20 +25,34 @@ $neutral: #F2CC8F;
 
 body {
     margin: 0;
-    background-color: $back;
+    background-color: $primary;
 }
 
-.homebody {
-    background-image: url("/media/Winslow-Fernsby.jpg"), url("/media/me.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+h2 {
+    padding-left: 50px;
+    text-transform: capitalize;
 }
 
+.picture {
+    border: 3px solid $front;
+    margin-top: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
 
 // HEADING
 
+header {
+    width: 100%;
+}
+
 .heading {
-    background-color: $front;
+    background-color: $secondary;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,16 +62,17 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     z-index: 10;
+    
 }
 
 .aidan {
-    color: $back;
-    background-color: $front;
+    color: $front;
+    background-color: $secondary;
     width: 200px;
     text-align: center;
-    border: 2px solid $back;
+    border: 2px solid $front;
     border-radius: 20px;
-    text-shadow: 5px 0px $secondary;
+    text-shadow: 5px 0px $primary;
     letter-spacing: 0.3em;
     text-transform: uppercase;
 }
@@ -59,7 +85,7 @@ body {
     color: $neutral;
     transition: 0.5s;
     text-shadow: 0px 0px $back;
-    border-color: $neutral
+    border-color: $neutral;
 }
 
 .links {
@@ -75,7 +101,12 @@ body {
 }
 
 .page-nav:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
+    transition: 0.5s;
+    border: 10px solid $neutral;
+    border-radius: 100%;
+    padding: 0;
+    background-color: $neutral;
     transition: 0.5s;
 }
 
@@ -86,20 +117,23 @@ body {
     flex-direction: column;
     align-items: center;
     width: 150px;
-    height: 500px;
+    height: 520px;
     text-decoration: none;
-    background-color: $neutral;
+    background-color: $secondary;
     font-weight: 700;
     position: -webkit-sticky; //safari
     position: sticky;
     top: 0;
+    z-index: 5;
+    border: 2px solid $secondary;
+    border-radius: 0 0 10px 0;
 }
 
 .page-link {
     text-decoration: none;
     font-size: 1.5em;
-    color: $back;
-    background-color: $front;
+    color: $front;
+    background-color: $secondary;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -126,6 +160,12 @@ main {
     width: 100%;
 }
 
+article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .content-container {
     display: flex;
     width: 100%;
@@ -135,21 +175,21 @@ main {
 
 .text-container {
     text-align: justify;
-    color: $primary;
-    width: 100%;
+    color: $secondary;
+    // width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    border: solid $back;
     border-width: 0px 10px 10px 10px;
     font-size: 1.5em;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .text {
-    border-radius: 5px;
-    color: $back;
-    background-color: $primary;
-    padding: 10px;
+    border-radius: 10px;
+    color: $front;
+    background-color: $back;
+    padding: 10px 50px 40px 50px;
 }
 
 .portrait {
@@ -165,6 +205,38 @@ main {
 #home-page {
     height: 500px;
 }
+
+
+// INDEX RULES
+
+.index-title {
+    display: flex;
+    width: 100%;
+    padding-left: 125px;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+}
+
+.welcome {
+    text-align: center;
+    color: $front;
+    width: 100%;
+    letter-spacing: 1.1em;
+    text-transform: uppercase;
+}
+
+// BLOG RULES
+
+// PROJECTS RULES
+
+// MEDIA RULES
+
+// ABOUT RULES
+
+// CONTACT RULES (no touching)
+
+// MEDIA
 
 @media screen and (max-width: 1100px) {
     .text-container {
@@ -185,6 +257,8 @@ main {
         width: 100%;
         height: 100px;
         flex-direction: row;
+        border: none;
+        border-radius: 0;
     }
 
     .page-link {
@@ -212,6 +286,15 @@ main {
 
     .hidden-text {
         visibility: hidden;
+    }
+
+    .index-title {
+        padding-left: 10%;
+        padding-right:10%;
+    }
+
+    .welcome {
+        letter-spacing: 1em;
     }
 }
 
