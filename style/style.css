@@ -13,6 +13,10 @@ h2 {
   text-transform: capitalize;
 }
 
+a {
+  color: #d1ff48;
+}
+
 .picture {
   border: 3px solid #F4F1DE;
   margin-top: 10px;
@@ -191,6 +195,37 @@ article {
   width: 100%;
   letter-spacing: 1.1em;
   text-transform: uppercase;
+}
+
+.card-case {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  background-color: #5F5449;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 300px;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  border: 2px solid #d1ff48;
+  margin: 5px 10px 15px 10px;
+  transition: 0.3s;
+}
+
+.card-container {
+  text-align: justify;
+  padding: 2px 16px;
+  color: #F4F1DE;
+}
+
+.card-image {
+  border-radius: 5px 5px 0 0;
 }
 
 @media screen and (max-width: 1100px) {
