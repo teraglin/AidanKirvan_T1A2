@@ -63,6 +63,7 @@ header {
     width: 100%;
     height: 100px;
     padding-left: 50px;
+    padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
     z-index: 10;
@@ -96,12 +97,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 50px;
-    padding-left: 25px;
+    // width: 200px;
 }
 
-.page-nav {
-    padding: 10px;
+.page-nav-ico {
+    width: 50px;
+    margin: 10px;
 }
 
 .page-nav:hover {
@@ -289,8 +290,13 @@ article {
         flex-direction: column;
     }
 
+    .heading {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .navbar {
-        width: 100%;
+        width: 100vw;
         height: 100px;
         flex-direction: row;
         border: none;
@@ -313,6 +319,10 @@ article {
 
     #page-link-r {
         border-right: none;
+    }
+
+    .page-nav-ico {
+        width: 25px;
     }
 
     .portrait {
