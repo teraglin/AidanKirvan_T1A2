@@ -181,7 +181,7 @@ article {
 .text-container {
     text-align: justify;
     color: $secondary;
-    // width: 100%;
+    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     border-width: 0px 10px 10px 10px;
@@ -195,6 +195,7 @@ article {
     color: $front;
     background-color: $back;
     padding: 10px 50px 40px 50px;
+    width: 100%;
 }
 
 .portrait {
@@ -242,7 +243,7 @@ article {
 .card {
     background-color: $back;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    // transition: 0.3s;
+    height: 500px;
     border-radius: 5px;
     width: 300px;
     margin: 10px;
@@ -259,6 +260,8 @@ article {
     text-align: justify;
     padding: 2px 16px;
     color: $front;
+    height: 200px;
+    overflow: scroll;
 }
 
 .card-image {
@@ -269,9 +272,21 @@ article {
 
 // MEDIA RULES
 
+#album-image {
+    width: 200px;
+    height: 200px;
+}
+
 // ABOUT RULES
 
 // CONTACT RULES (no touching)
+
+form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
 
 // SCREEN ADJUST
 
