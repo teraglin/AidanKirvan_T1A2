@@ -62,8 +62,8 @@ header {
     align-items: center;
     width: 100%;
     height: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     z-index: 10;
@@ -80,6 +80,8 @@ header {
     text-shadow: 5px 0px $primary;
     letter-spacing: 0.3em;
     text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .home-link {
@@ -101,7 +103,7 @@ header {
 }
 
 .page-nav-ico {
-    width: 50px;
+    width: 25px;
     margin: 10px;
 }
 
@@ -119,10 +121,9 @@ header {
 
 .navbar {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 150px;
-    height: 520px;
+    width: 100vw;
+    height: 100px;
     text-decoration: none;
     background-color: $secondary;
     font-weight: 700;
@@ -130,21 +131,19 @@ header {
     position: sticky;
     top: 0;
     z-index: 5;
-    border: 2px solid $secondary;
-    border-radius: 0 0 10px 0;
 }
 
 .page-link {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 0.8em;  
     color: $front;
     background-color: $secondary;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     display: flex;
+    justify-content: center;
     align-content: center;
-    padding-left: 10px;
     padding-top: 35px;
     width: 150px;
     height: 100px;
@@ -153,7 +152,7 @@ header {
 
 .page-link:hover {
     color: $neutral;
-    border-left: 10px solid $neutral;
+    border-bottom: 10px solid $neutral;
     transition: 0.5s;
 }
 
@@ -163,6 +162,7 @@ main {
     display: flex;
     position: relative;
     width: 100%;
+    flex-direction: column;
 }
 
 article {
@@ -202,10 +202,10 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 700px;
+    width: 100%;
     background-color: $back;
     border: solid $back;
-    border-width: 0px 10px 10px 0;
+    border-width: 0px 10px 10px 10px;
 }
 
 #home-page {
@@ -218,7 +218,8 @@ article {
 .index-title {
     display: flex;
     width: 100%;
-    padding-left: 125px;
+    padding-left: 10%;
+    padding-right: 10%;
     justify-content: center;
     position: relative;
     top: 150px;
@@ -228,7 +229,7 @@ article {
     text-align: center;
     color: $front;
     width: 100%;
-    letter-spacing: 1.1em;
+    letter-spacing: 1em;
     text-transform: uppercase;
 }
 
@@ -236,6 +237,7 @@ article {
 
 .card-case {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -246,7 +248,7 @@ article {
     height: 500px;
     border-radius: 5px;
     width: 300px;
-    margin: 10px;
+    margin: 50px;
 }
 
 .card:hover {
@@ -270,6 +272,37 @@ article {
 
 // PROJECTS RULES
 
+.proj-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.weblink {
+    height: 275px;
+    width: 300px;
+    margin: 10px;
+    background-color: $back;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.weblink:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    border: 2px solid $neutral;
+    margin: 5px 10px 15px 10px;
+    transition: 0.3s;
+}
+
+.web-image {
+    width: 100%;
+    height: 225px;
+    border-radius: 10px;
+}
+
 // MEDIA RULES
 
 #album-image {
@@ -290,7 +323,7 @@ form {
 
 // SCREEN ADJUST
 
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 1100px) {
     .text-container {
         font-size: 1.3em;
     }
@@ -300,36 +333,33 @@ form {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 700px) {
     main {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .heading {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .navbar {
-        width: 100vw;
-        height: 100px;
-        flex-direction: row;
-        border: none;
-        border-radius: 0;
+        width: 150px;
+        height: 520px;
+        flex-direction: column;
+        border: 2px solid $secondary;
+        border-radius: 0 0 10px 0;
     }
 
     .page-link {
         // border-right: 1px dotted $back;
-        font-size: 1em;
-        justify-content: center;
-        padding-left: 0;
+        font-size: 1.5em;
+        padding-left: 10px;
     }
 
     .page-link:hover {
-        color: $neutral;
-        border-bottom: 10px solid $neutral;
-        border-left: none;
-        transition: 0.5s;
+        border-left: 10px solid $neutral;
+        border-bottom: none;
     }
 
     #page-link-r {
@@ -337,25 +367,20 @@ form {
     }
 
     .page-nav-ico {
-        width: 25px;
+        width: 50px;
     }
 
     .portrait {
-        border-width: 0 10px 10px 10px;
-        width: 100%
-    }
-
-    .hidden-text {
-        visibility: hidden;
+        border-width: 0 10px 10px 0;
+        width: 700px;
     }
 
     .index-title {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 125px;
     }
 
     .welcome {
-        letter-spacing: 1em;
+        letter-spacing: 1.1em;
     }
 }
 
