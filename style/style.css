@@ -264,7 +264,7 @@ audio {
   background-color: #E07A5F;
   padding: 10px;
   height: 60px;
-  border-radius: 50px;
+  border-radius: 15px;
 }
 
 audio:hover {
