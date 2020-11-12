@@ -298,8 +298,10 @@ article {
 // MEDIA RULES
 
 audio {
+    display: flex;
     background-color: $secondary;
     padding: 10px;
+    height: 75px;
     border-radius: 50px;
 }
 
@@ -328,29 +330,29 @@ audio:hover {
 
 .picture-group-1 {
     border: 3px solid $front;
-    margin: 10px;
-    width: 40%;
+    margin: 2px;
+    width: 45%;
     height: 100%;
 }
 
 .picture-group-2 {
     border: 3px solid $front;
-    margin: 10px;
-    width: 82%;
+    margin: 2px;
+    width: 90%;
     height: 100%;
 }
 
 .picture-group-3 {
     border: 3px solid $front;
-    margin: 10px;
-    width: 40%;
+    margin: 2px;
+    width: 45%;
     height: 100%;
 }
 
 .picture-group-4{
     border: 3px solid $front;
-    margin: 10px;
-    width: 82%;
+    margin: 2px;
+    width: 90%;
     height: 100%;
 }
 
