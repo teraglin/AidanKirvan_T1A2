@@ -17,17 +17,6 @@ a {
   color: #d1ff48;
 }
 
-.picture {
-  border: 3px solid #F4F1DE;
-  margin-top: 10px;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 #current-page {
   color: #d1ff48;
 }
@@ -295,6 +284,40 @@ audio:hover {
 #album-image {
   width: 200px;
   height: 200px;
+}
+
+.picture-group-1 {
+  border: 3px solid #F4F1DE;
+  margin: 10px;
+  width: 40%;
+  height: 100%;
+}
+
+.picture-group-2 {
+  border: 3px solid #F4F1DE;
+  margin: 10px;
+  width: 82%;
+  height: 100%;
+}
+
+.picture-group-3 {
+  border: 3px solid #F4F1DE;
+  margin: 10px;
+  width: 40%;
+  height: 100%;
+}
+
+.picture-group-4 {
+  border: 3px solid #F4F1DE;
+  margin: 10px;
+  width: 82%;
+  height: 100%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 form {
