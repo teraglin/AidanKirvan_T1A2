@@ -46,7 +46,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
 
+#current-page {
+    color: $neutral;
 }
 
 // HEADING
@@ -110,7 +113,7 @@ header {
 .page-nav:hover {
     transform: scale(1.3);
     transition: 0.5s;
-    border: 10px solid $neutral;
+    border: 5px solid $neutral;
     border-radius: 100%;
     padding: 0;
     background-color: $neutral;
@@ -305,6 +308,28 @@ article {
 
 // MEDIA RULES
 
+audio {
+    background-color: $secondary;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+audio:hover {
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.media-container {
+    display: flex;
+    width: 100%;
+    background-color: $back;
+    border-radius: 10px;
+    color: $front;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
 #album-image {
     width: 200px;
     height: 200px;
@@ -381,6 +406,11 @@ form {
 
     .welcome {
         letter-spacing: 1.1em;
+    }
+
+    #album-image {
+        width: 400px;
+        height: 400px;
     }
 }
 
