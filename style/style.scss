@@ -29,8 +29,9 @@ body {
 }
 
 h2 {
-    padding-left: 50px;
-    text-transform: capitalize;
+    padding-left: 10px;
+    color: $secondary;
+    text-align: center;
 }
 
 a {
@@ -39,6 +40,11 @@ a {
 
 #current-page {
     color: $neutral;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
 // HEADING
@@ -171,13 +177,12 @@ article {
 }
 
 .text-container {
-    text-align: justify;
-    color: $secondary;
+    text-align: left;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     border-width: 0px 10px 10px 10px;
-    font-size: 1.5em;
+    // font-size: 1.5em;
     margin-top: 10px;
     flex-wrap: wrap;
 }

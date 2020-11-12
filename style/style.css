@@ -9,8 +9,9 @@ body {
 }
 
 h2 {
-  padding-left: 50px;
-  text-transform: capitalize;
+  padding-left: 10px;
+  color: #E07A5F;
+  text-align: center;
 }
 
 a {
@@ -19,6 +20,11 @@ a {
 
 #current-page {
   color: #d1ff48;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -142,13 +148,11 @@ article {
 }
 
 .text-container {
-  text-align: justify;
-  color: #E07A5F;
+  text-align: left;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   border-width: 0px 10px 10px 10px;
-  font-size: 1.5em;
   margin-top: 10px;
   flex-wrap: wrap;
 }
