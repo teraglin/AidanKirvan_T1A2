@@ -165,16 +165,6 @@ article {
   width: 100%;
 }
 
-.portrait {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #5F5449;
-  border: solid #5F5449;
-  border-width: 0px 10px 10px 10px;
-}
-
 #home-page {
   height: 500px;
 }
@@ -216,7 +206,7 @@ article {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
   border: 2px solid #d1ff48;
-  margin: 38px 40px 42px 40px;
+  margin: 30px 40px 50px 40px;
   transition: 0.3s;
 }
 
@@ -292,31 +282,10 @@ audio:hover {
   height: 200px;
 }
 
-.picture-group-1 {
+.portrait {
   border: 3px solid #F4F1DE;
   margin: 2px;
-  width: 45%;
-  height: 100%;
-}
-
-.picture-group-2 {
-  border: 3px solid #F4F1DE;
-  margin: 2px;
-  width: 90%;
-  height: 100%;
-}
-
-.picture-group-3 {
-  border: 3px solid #F4F1DE;
-  margin: 2px;
-  width: 45%;
-  height: 100%;
-}
-
-.picture-group-4 {
-  border: 3px solid #F4F1DE;
-  margin: 2px;
-  width: 90%;
+  width: 75%;
   height: 100%;
 }
 
@@ -326,11 +295,52 @@ audio:hover {
   justify-content: center;
 }
 
+.cv {
+  color: #F4F1DE;
+  background-color: #E07A5F;
+  width: 125px;
+  height: 40px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  align-self: center;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cv:hover {
+  border: 2px solid #d1ff48;
+  color: #d1ff48;
+}
+
+.cv.cv:active {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 2px;
+  margin-bottom: 18px;
+}
+
+.badge-case {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+img#badge {
+  width: 20%;
+}
+
 form {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
+}
+
+.contact-info {
+  font-weight: 100;
 }
 
 @media screen and (min-width: 1100px) {
@@ -340,6 +350,10 @@ form {
 
   .content-container {
     flex-wrap: wrap;
+  }
+
+  .cv {
+    align-self: unset;
   }
 }
 @media screen and (min-width: 700px) {
@@ -378,11 +392,6 @@ form {
     width: 50px;
   }
 
-  .portrait {
-    border-width: 0 10px 10px 0;
-    width: 700px;
-  }
-
   .index-title {
     padding-left: 125px;
   }
@@ -395,6 +404,14 @@ form {
     width: 400px;
     height: 400px;
   }
+
+  .cv {
+    align-self: unset;
+  }
+
+  img#badge {
+    width: 10%;
+  }
 }
 footer {
   color: #F4F1DE;
@@ -404,6 +421,7 @@ footer {
   top: 120px;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

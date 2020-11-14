@@ -1,0 +1,149 @@
+commit a01d1322f6a135c70f27d075c1c350f3595762b6
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Thu Nov 12 22:42:23 2020 +1100
+
+    added cv link in 'about.html'
+
+commit fa24db39f24bac46c84de11b7956fb108974face
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Thu Nov 12 20:50:41 2020 +1100
+
+    final audio size test
+
+commit e82e0de4afd04776304a31c2103b7d7ccd6a1d0c
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Thu Nov 12 20:48:02 2020 +1100
+
+    further audio resize testing
+
+commit 19af717938e887996d008d318f2129f6be45f33c
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Thu Nov 12 20:45:46 2020 +1100
+
+    further image size adjustment for phone view in about. resized height of audio element
+
+commit ca48b7cfbcc3405d10ca7e87848870143068069f
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Thu Nov 12 20:27:59 2020 +1100
+
+    resized images in about and added favicon
+
+commit 08b282a1890a51ec4e000ebf5cedd8f4f711fd6c
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Thu Nov 12 14:31:40 2020 +1100
+
+    nav bar will now display the page you are currently on
+
+commit 8c1b2453832cf36ce066b80b3a28e673d6474529
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Wed Nov 11 19:21:53 2020 +1100
+
+    finalised layout for all pages
+
+commit 00d996c578a2eb8fc51144868fe9ca52f7f94f92
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Tue Nov 10 19:39:20 2020 +1100
+
+    added projects to projects. swapped media quries so that code pertains to phone view first
+
+commit 3bed615d8167ffac4963aca43f6e4ab52847c534
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Sun Nov 8 23:15:31 2020 +1100
+
+    added to blog.html, media.html and forms to contact.html
+
+commit 0502812102edfa9cc9f740992985ec3044be2726
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Sat Nov 7 16:03:11 2020 +1100
+
+    adjusted external link svg icons for mobile view
+
+commit 1ee3f28627beab2a95018d10d3b069d8b83e3a5b
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Sat Nov 7 15:20:44 2020 +1100
+
+    modified imiage width in about
+
+commit fe244ab520d47ded35f7aa2d53b0f76eecdf008a
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Sat Nov 7 15:04:05 2020 +1100
+
+    added cards to blog
+
+commit 47042a1ceee3e76e2f2a52629cf64a90a644a053
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Fri Nov 6 17:36:57 2020 +1100
+
+    more experimentation and cleanup. Blocked out the About page and started on Blog.
+
+commit b8ad6987dcb03bac69d72b658cb6f0604e49571d
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Fri Nov 6 09:11:03 2020 +1100
+
+    made the nav bar sticky. played with backround images but will return to that later when the other pages are fleshed out.
+
+commit c171c819a96c6a197c11a06b104cf3132654383a
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Thu Nov 5 12:27:41 2020 +1100
+
+    added icon animations for hover
+
+commit 1757854db79ea0c41db1fc7876200b4223143bbf
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Thu Nov 5 11:47:46 2020 +1100
+
+    added page 'projects.html' and removed home link. Heading title is now home link, added hover animation. re-worked and re-linked other pages.
+
+commit dc67430e36ae022591d47f81562f37bda816edac
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Thu Nov 5 10:50:58 2020 +1100
+
+    modified image, altered layout, put links in link section.
+
+commit 1f57007f58ab1fe2e79d853095d7c46e6c42d47a
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Wed Nov 4 16:37:35 2020 +1100
+
+    fixed navbar and heading
+
+commit 1d2655e52ca72847208ea0bd8d827f78471429df
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Tue Nov 3 22:32:26 2020 +1100
+
+    added image to front page and changed some colour
+
+commit 05b1e2af6ddbbd16c25cd671149b249f2874f226
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Tue Nov 3 21:18:57 2020 +1100
+
+    worked on front page layout and colourisation
+
+commit 18d46d620f0db74df233ed183f87eb09dc5898fa
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Tue Nov 3 20:10:11 2020 +1100
+
+    moved navbar so that external links can sit in the top right.
+
+commit 04b48097c3b88c16404d4083430c26e138fb5b61
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Tue Nov 3 20:08:26 2020 +1100
+
+    started css on index.html. experimented with gradients.
+
+commit e0bf585833cabc4be0f7101ca1eaea3fef50c833
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Tue Nov 3 10:06:35 2020 +1100
+
+    applied baselines for additional pages. Addded classes.
+
+commit c3eda48a075fe105df3cee8431e17b78124b3d45
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Tue Nov 3 00:11:11 2020 +1100
+
+    set up home page in index.html
+
+commit 386ee8be29237c8a76755d06cbe15bdfcdbdb370
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Tue Nov 3 00:00:54 2020 +1100
+
+    initial commit

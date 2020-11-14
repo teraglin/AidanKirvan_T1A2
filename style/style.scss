@@ -195,16 +195,6 @@ article {
     width: 100%;
 }
 
-.portrait {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: $back;
-    border: solid $back;
-    border-width: 0px 10px 10px 10px;
-}
-
 #home-page {
     height: 500px;
 }
@@ -251,7 +241,7 @@ article {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
     border: 2px solid $neutral;
-    margin: 38px 40px 42px 40px;
+    margin: 30px 40px 50px 40px;
     transition: 0.3s;
 }
 
@@ -333,31 +323,10 @@ audio:hover {
 
 // ABOUT RULES
 
-.picture-group-1 {
+.portrait {
     border: 3px solid $front;
     margin: 2px;
-    width: 45%;
-    height: 100%;
-}
-
-.picture-group-2 {
-    border: 3px solid $front;
-    margin: 2px;
-    width: 90%;
-    height: 100%;
-}
-
-.picture-group-3 {
-    border: 3px solid $front;
-    margin: 2px;
-    width: 45%;
-    height: 100%;
-}
-
-.picture-group-4{
-    border: 3px solid $front;
-    margin: 2px;
-    width: 90%;
+    width: 75%;
     height: 100%;
 }
 
@@ -367,13 +336,54 @@ audio:hover {
     justify-content: center;
 }
 
-// CONTACT RULES (no touching)
+.cv {
+    color: $front;
+    background-color: $secondary;
+    width: 125px;
+    height: 40px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-self: center;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cv:hover {
+    border: 2px solid $neutral;
+    color: $neutral;
+}
+
+.cv.cv:active {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 2px;
+    margin-bottom: 18px;
+}
+
+.badge-case {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+img#badge {
+    width: 20%;   
+}
+
+// CONTACT RULES
 
 form {
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
+}
+
+.contact-info {
+    font-weight: 100;
 }
 
 // SCREEN ADJUST
@@ -385,6 +395,9 @@ form {
 
     .content-container {
         flex-wrap: wrap;
+    }
+    .cv {
+        align-self: unset;
     }
 }
 
@@ -425,11 +438,6 @@ form {
         width: 50px;
     }
 
-    .portrait {
-        border-width: 0 10px 10px 0;
-        width: 700px;
-    }
-
     .index-title {
         padding-left: 125px;
     }
@@ -441,6 +449,14 @@ form {
     #album-image {
         width: 400px;
         height: 400px;
+    }
+
+    .cv {
+        align-self: unset;
+    }
+
+    img#badge {
+        width: 10%;
     }
 }
 
@@ -455,4 +471,5 @@ footer {
     top: 120px;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
