@@ -330,7 +330,7 @@ audio:hover {
 
 img#badge {
   width: 20%;
-  height: 100%;
+  height: auto;
 }
 
 form {
