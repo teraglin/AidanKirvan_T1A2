@@ -1,3 +1,33 @@
+commit 7020607a2983c864faaea968a2e4a0ef2ea6da32
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Sun Nov 15 12:18:17 2020 +1100
+
+    cleaned up code
+
+commit dff8029a8b3db81001a90ff6fc874e5412c53dcd
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Sat Nov 14 14:55:02 2020 +1100
+
+    added variation to blog posts to better show how text scrolls in the blog cards
+
+commit 96d764d951abb8598ebdca6206e6be2bb8844140
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Sat Nov 14 14:05:59 2020 +1100
+
+    forgot to update sass for the css file
+
+commit 280d9d0df1ae518a6224e6a8be7c29390c747d3b
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Sat Nov 14 14:00:22 2020 +1100
+
+    adjusted height of badge in about
+
+commit b7b69b9176f6f8d389025a1973d8329ce52c139b
+Author: teraglin <apkirvan@hotmail.com>
+Date:   Sat Nov 14 13:44:28 2020 +1100
+
+    made button for cv. added icons for code language badges. Added more info to contact
+
 commit a01d1322f6a135c70f27d075c1c350f3595762b6
 Author: teraglin <apkirvan@hotmail.com>
 Date:   Thu Nov 12 22:42:23 2020 +1100
