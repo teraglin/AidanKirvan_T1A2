@@ -68,6 +68,7 @@ header {
 
 }
 
+//Main Logo
 .aidan {
     color: $front;
     background-color: $secondary;
@@ -93,6 +94,7 @@ header {
     border-color: $neutral;
 }
 
+//Social Media Links
 .links {
     display: flex;
     justify-content: center;
@@ -384,7 +386,7 @@ form {
 }
 
 .contact-info {
-    font-weight: 100;
+    font-weight: 700;
 }
 
 // SCREEN ADJUST
@@ -439,6 +441,7 @@ form {
         width: 50px;
     }
 
+    //Index
     .index-title {
         padding-left: 125px;
     }
@@ -447,13 +450,16 @@ form {
         letter-spacing: 1.1em;
     }
 
+    //Media
     #album-image {
         width: 400px;
         height: 400px;
     }
 
+    //About
     .cv {
         align-self: unset;
+        width: 150px;
     }
 
     img#badge {
